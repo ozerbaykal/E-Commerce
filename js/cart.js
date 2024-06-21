@@ -79,8 +79,7 @@ export function renderCartItems() {
     //idsine göre HTML etiketini aldık
     const cartItemsElement = document.getElementById("cartItems");
     //sepetteki herbir ürün için ekrana bir tane cart-item bileşeni aktardık.
-    cartItemsElement.innerHTML = cart
-        .map(
+    cartItemsElement.innerHTML =cart.map(
             (item) => `
     <div class="cart-item">
     <img 
